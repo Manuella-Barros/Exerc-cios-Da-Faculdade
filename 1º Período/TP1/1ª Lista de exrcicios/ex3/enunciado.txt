@@ -1,0 +1,1 @@
+ Leia o peso e altura de uma pessoa, calcule e imprima seu IMC. Sabe-se que IMC = peso/altura2

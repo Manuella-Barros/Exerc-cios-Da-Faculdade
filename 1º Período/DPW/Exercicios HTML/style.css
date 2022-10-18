@@ -1,0 +1,45 @@
+p{
+    font-size: 18px;
+}
+
+.vermelho{
+    color: red;
+}
+
+.azul{
+    color: rgb(58, 114, 139);
+}
+
+.verde{
+    color: rgb(65, 156, 100);
+}
+
+#paragrafo{
+    font-size: 17px;
+    border: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(240, 22, 22);
+    background-color: rgba(240, 22, 22, 0.274);
+}
+
+#tabela{
+    text-align: center;
+    width: 25%;
+    border-collapse: collapse;
+    margin-left: 15%;
+}
+
+th, td{
+    border: 1px;
+    border-style: solid;
+}
+
+/* :nth-child() = The :nth-child(n) selector matches every element that is the nth child of its parent. */
+tr:nth-child(even), th{
+    background-color: rgb(161, 166, 189);
+}
+
+.nome{
+    text-align: initial;
+}
