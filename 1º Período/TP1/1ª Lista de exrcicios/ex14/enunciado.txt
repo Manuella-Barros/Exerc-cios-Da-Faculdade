@@ -1,0 +1,2 @@
+Leia a e b e calcule a equação do 1º grau ax + b = 0, imprimindo o valor de x. Considere a
+diferente de zero.

@@ -1,0 +1,3 @@
+Leia 3 variáveis inteiras a, b e c e faça um "rodízio" entre elas. Ao final, a variável b deverá ter o
+valor da variável a, a variável c deverá ter o valor da variável b e a variável a deverá ter o valor da
+variável c.
