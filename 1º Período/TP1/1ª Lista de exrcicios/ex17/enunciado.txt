@@ -1,0 +1,2 @@
+Leia dois inteiros x e y e imprima o maior múltiplo de x menor ou igual a y. Exemplo: se x = 9 e y
+= 38, então o resultado é 36.

@@ -1,2 +1,2 @@
-Leia dois inteiros x e y e imprima o maior múltiplo de x menor ou igual a y. Exemplo: se x = 9 e y
-= 38, então o resultado é 36.
+Leia um número real x e imprima seu valor arredondado. Por exemplo: se x = 3.2 imprimir 3, e se x
+= 3.5 ou maior imprimir 4.
