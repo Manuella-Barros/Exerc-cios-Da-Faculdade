@@ -1,0 +1,2 @@
+Leia um número n com 8 dígitos, separe o dia, mês e ano do número lido, mostrando-os na tela.
+Exemplo: 25031949 imprime 25/03/1959

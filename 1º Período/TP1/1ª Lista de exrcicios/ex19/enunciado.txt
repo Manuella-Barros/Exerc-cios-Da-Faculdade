@@ -1,0 +1,1 @@
+Leia um número inteiro n de 100 a 999 e imprima a soma dos dígitos que compõem o número.

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
-
+//N√ÉO TERMINEI
 int calculoMultiplo(int x, int y);
 
 int main(void){
@@ -15,19 +15,23 @@ int main(void){
 
 int calculoMultiplo(int x, int y){
   int multiplo;
-  int contador = 1;
+  //int contador = 1;
   
   if (x <= y){
     for (int i = 0; i <= y; i++){
+      int comparacao;
       multiplo = x * i;
       printf("i = %i\n", i);
-      
-      if (y - multiplo <= y){
-          break;
+      comparacao = y - multiplo;
+      printf("comparacao = %i\n", comparacao);
+
+      if (comparacao < y){
+        printf("multiplo = %i\n", multiplo);
+          //break;
       }      
     }
 
-    printf("multiplo = %i\n", multiplo);
+    
     
   } else{
     main();
@@ -38,4 +42,4 @@ int calculoMultiplo(int x, int y){
     
 
     
-    //printf("o maior multiplo de %i ,menor ou igual a %i, È %i\n", x, y, multiplo);
+    //printf("o maior multiplo de %i ,menor ou igual a %i, ÔøΩ %i\n", x, y, multiplo);
