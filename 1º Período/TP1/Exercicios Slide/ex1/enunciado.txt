@@ -1,0 +1,4 @@
+- Construir um algoritmo para ler os coeficientes A, B e C de uma equação do segundo grau e se:
+    - Delta for negativo: imprimir a mensagem: “Não há
+    solução real.”
+    - Delta for maior ou igual a zero: calcular e imprimir as raízes da equação.

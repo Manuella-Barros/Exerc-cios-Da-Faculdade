@@ -1,0 +1,2 @@
+Leia um número inteiro a com 4 dígitos e calcule outro número inteiro b que deverá ser o número a
+invertido. Exemplo: se a = 5732 então b = 2375.
