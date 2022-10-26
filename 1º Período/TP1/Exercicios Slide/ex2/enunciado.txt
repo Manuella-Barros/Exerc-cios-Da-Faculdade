@@ -1,0 +1,1 @@
+Faça um programa para ler dois número inteiros, faça a divisão do primeiro pelo segundo (se o segundo for diferente de zero).

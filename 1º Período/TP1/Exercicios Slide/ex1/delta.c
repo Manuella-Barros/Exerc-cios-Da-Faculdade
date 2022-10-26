@@ -19,7 +19,7 @@ int calculoDelta(int a, int b, int c){
     delta = (b*b) - (4 * a *c);
 
     if (delta < 0){
-        printf("Não há solução real");
+        printf("Nao ha solucao real");
 
     } else{
         x1 = (-b + sqrt(delta)) / (2 * a);
