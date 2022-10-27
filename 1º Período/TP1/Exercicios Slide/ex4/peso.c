@@ -7,19 +7,25 @@ int main(void){
     char sexo[10];
 
     printf("Qual sua altura e sexo (masculino ou feminino)? ");
-    scanf("%f %c", &altura, &sexo);
+    scanf("%f %s", &altura, &sexo);
 
-    printf("altura = %f, sexo = %c\n", altura, sexo);
+    //printf("altura = %f, sexo = %s\n", altura, sexo);
 
-    //calculoPeso( altura, sexo);
+    calculoPeso(altura, sexo);
 }
 
 int calculoPeso(float altura, char sexo[10]){
-    int peso;
+    float peso;
 
-    if (sexo == "feminino"){
+    if (strcmp(sexo, "feminino") == 0){
         peso = (72.7 * altura) - 58;
-        printf("sexo = %c, altura = %i, peso = %i\n", sexo, altura, peso);
+        printf("Peso = %.2f\n", peso);
+
+    } else if(strcmp(sexo, "masculino") == 0){
+        peso = (62.1 * altura) - 44.7;
+        printf("Peso = %.2f\n", peso);
+    } else{
+        main();
     }
 
 }

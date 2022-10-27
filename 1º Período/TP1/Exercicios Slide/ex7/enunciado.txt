@@ -1,0 +1,6 @@
+Faça um programa para ler um caracter e imprimir as
+seguintes mensagens, segundo o caso:
+Sinal de Menor
+Sinal de Maior
+Sinal de Igual
+Outro caracter
