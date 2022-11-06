@@ -1,0 +1,1 @@
+Leia um número inteiro n e informe se ele é ou não divisível por 6.

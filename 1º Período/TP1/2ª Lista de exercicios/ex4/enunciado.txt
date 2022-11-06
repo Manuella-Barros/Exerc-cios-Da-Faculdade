@@ -1,0 +1,1 @@
+Leia dois números n e k e informe se n é divisível por k
