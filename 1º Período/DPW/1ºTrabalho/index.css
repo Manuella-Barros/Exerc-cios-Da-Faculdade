@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+
 }
 
 body{
@@ -15,6 +16,8 @@ header{
 nav{
     text-align: left;
     height: 50px;
+    background-color: black;
+    margin: 0px 50px 0px 50px;
 }
 
 main{
@@ -22,6 +25,8 @@ main{
     height: 400px;
     width: 80%;
     float: left;
+    background-color: blueviolet;
+
 }
 
 aside{
@@ -29,12 +34,14 @@ aside{
     height: 400px;
     width: 20%;
     float: right;
+    background-color: blue;
 }
 
 footer{
     text-align: left;
     height: 500px;
     display: block;
+    background-color: brown;
 }
 
 .logo{
@@ -45,13 +52,13 @@ ul {
     list-style-type: none;
     overflow: hidden;
     text-align: center;
-    padding-left: 31%;
+    padding: 0px 300px 0px 300px;
 }
 
 li {
     float: left;
     color: rgb(255, 255, 255);
-    font-size: 134%;
+    font-size: 20px;
     font-weight: bold;
     background-color: black;
     border: solid black;
@@ -65,4 +72,13 @@ a{
 
 a:hover{
     color: darkorange;
+}
+
+.destaque1{
+    width: 200px;
+}
+
+.destaque2{
+    width: 200px;
+    float: right;
 }
