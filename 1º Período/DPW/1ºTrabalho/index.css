@@ -2,7 +2,20 @@
     margin: 0;
     padding: 0;
     border: 0;
+}
 
+/* ORGANIZAÇÃO DA TELA */
+h2{
+    color: #000000;
+    padding: 20px;
+    font-size: 35px;
+    text-shadow: 2px 2px #F19200;
+}
+
+h1{
+    padding: 10px;
+    font-size: 23px;
+    text-shadow: 2px 2px #F19200;
 }
 
 body{
@@ -16,46 +29,45 @@ header{
 nav{
     text-align: left;
     height: 50px;
-    background-color: black;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 40px 0px 50px;    
 }
 
 main{
     text-align: left;
-    height: 400px;
+    height: 900px;
     width: 80%;
     float: left;
-    background-color: blueviolet;
-
+    /*background-color: blueviolet;*/
 }
 
 aside{
     text-align: left;
-    height: 400px;
+    height: 900px;
     width: 20%;
     float: right;
-    background-color: blue;
+    margin-top: 80px;
 }
 
 footer{
     text-align: left;
     height: 500px;
     display: block;
-    background-color: brown;
 }
 
+/* ELEMENTOS HEADER */
 .logo{
     padding-left: 40%;
 }
 
-ul {
+/* ELEMENTOS NAV */
+.menu {
     list-style-type: none;
     overflow: hidden;
     text-align: center;
     padding: 0px 300px 0px 300px;
 }
 
-li {
+.menuElemento{
     float: left;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -65,7 +77,13 @@ li {
     border-width: 15px;
 }
 
-a{
+table{
+    width: 100%;
+    padding-left: 27%;
+    margin: auto;
+}
+
+.menuElemento a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -74,11 +92,63 @@ a:hover{
     color: darkorange;
 }
 
+/* ELEMENTOS MAIN */
 .destaque1{
-    width: 200px;
+
+    display: flex;
+}
+.destaque2{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
-.destaque2{
-    width: 200px;
-    float: right;
+.container {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.container figcaption {
+    position: absolute;
+    top: 340px;
+    left: 10px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px black;
+}
+
+#informacoesVolei{
+    padding: 20px;
+}
+
+#informacoesVolei li{
+    padding-top: 15px;
+}
+
+p{
+    padding: 10px;
+}
+
+/* ASIDE */
+.tabelaJogo table, .tabelaJogo th, .tabelaJogo td{
+    align-items: center;
+    width: 100%;
+    border: #000000 solid 1px;
+    padding: 5px;
+}
+
+.tabelaJogo a{
+    color: #000000;
+}
+
+a:hover{
+    color: darkorange;
+}
+
+/* FOOTER */
+
+.haikyuuIndex img{
+    width: 150px;
+    float: left;
 }

@@ -13,31 +13,114 @@
     </header>
 
     <nav>
-        <ul>
-            <li> <a href=""> &nbsp; Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
-            <li> <a href=""> História &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
-            <li> <a href=""> Quiz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
-            <li> <a href=""> Curiosidades &nbsp; </a></li>
-        </ul>
+        <table>
+            <tr>
+                <td  class="menuElemento">
+                    <a href="index.html"> &nbsp; Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+                </td>
+                <td  class="menuElemento">
+                    <a href="historia.html"> História &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+                </td>
+                <td class="menuElemento">
+                    <a href="quiz.html"> Quiz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+                </td>
+                <td class="menuElemento">
+                    <a href="curiosidades.html"> Curiosidades &nbsp; </a>
+                </td>
+            </tr>
+        </table>
     </nav>
 
     <main>
-        <h2>Destaque da semana</h2>
+        <h2>Destaques da semana</h2>
+        <div class="destaque1">
+            <ul class="container">
+                <li>
+                    <a href="https://ge.globo.com/volei-de-praia/noticia/2022/11/06/brasil-fatura-ouro-e-bronze-em-etapa-do-circuito-mundial-de-volei-de-praia.ghtml" target="blank"><img src="imagens/foto2.jpg"  alt="" style="width: 296px;"></a> 
+                    <figcaption>Brasil fatura ouro e bronze em etapa do Circuito Mundial de vôlei de praia</figcaption>
+                </li>
+
+            </ul>
+            <ul class="container">
+                <li>
+                    <a href="https://ge.globo.com/mg/volei/noticia/2022/11/05/fora-de-casa-minas-bate-sao-caetano-e-vence-a-segunda-na-superliga-de-volei-feminino.ghtml" target="blank"><img src="imagens/foto3.png" class="destaque2" alt="" style="width: 300px;" ></a>
+                    <figcaption style="top: 130px; left: 10px; font-size: 17.5px;">Fora de casa, Minas bate São Caetano e vence a segunda na Superliga de vôlei feminino</figcaption>
+                </li>
+                <li>
+                    <a href="https://webvolei.com.br/julia-bergmann-quebra-recorde-na-ncaa-43-pontos/" target="blank"><img src="imagens/foto1.png" class="destaque2" alt="" style="width: 300px;"></a>
+                    <figcaption>Julia Bergmann quebra recorde na NCAA: 43 pontos</figcaption>
+                </li>
+            </ul>   
+        </div>
+
+        <h1>Algumas informações sobre o volei</h1>
         <div>
-            <div>
-                <img class="destaque1" src="imagens/foto2.jpg" alt="Jogadoras de volei">
-            </div>
-            <img class="destaque2" src="imagens/foto3.png" alt="Jogadoras de volei">
-            <img class="destaque2" src="imagens/foto1.png" alt="Jogadoras de volei">        
+            <ul id="informacoesVolei">
+                <li style="padding-top: 0px;">
+                    <strong>O objetivo e motivação do site: </strong> é informar as pessoas sobre o esporte volei e aproxima-las sobre as novidades que estão acontecendo atualmente nesse universo
+                </li>
+                <li>
+                    <strong>Como funciona: </strong> O jogo é iniciado por uma das equipes que dão o saque, lançando a bola para o lado da equipe adversária. Após o saque, a bola deve ultrapassar a rede, onde os jogadores adversários evitam que caia em seu campo, utilizando no máximo três toques. O jogo é dividido em sets, quem vencer os três primeiros, ganha a partida.
+                </li>
+                <li>
+                    <strong>O objetivo do jogo: </strong> O objetivo do jogo é fazer com que a bola passe sobre a rede fazendo-a tocar no chão da quadra adversária, evitando que os adversários façam o mesmo.
+                </li>
+                <li>
+                    <strong>Beneficios do volei: </strong> O vôlei é um exercício que desenvolve a coordenação motora, aumenta a agilidade, a massa muscular, alivia o stress e emagrece, além disso, o gasto calórico é de aproximadamente 400 Kcal/hora
+                </li>
+                <li>
+                    <strong>Sobre os maleficios: </strong>É interessante observar o uso do tênis adequado para não ocasionar desgaste no calcanhar.
+                </li>
+            </ul>
         </div>
     </main>
 
     <aside>
-        <p>aside</p>
+        <table class="tabelaJogo" style="align-items: center;">
+            <caption>CONFIRA O RESULTADO DOS JOGOS DO MUNDIAL DE VÔLEI MASCULINO</caption>
+            <tr>
+                <th>Paises</th>
+                <th>Data</th>
+                <th>Placar</th>
+            </tr>
+            <tr>
+                <td>Cuba e Catar</td>
+                <td>28/08</td>
+                <td>3x1</td>
+            </tr>
+            <tr>
+                <td>Brasil e Japão</td>
+                <td>28/08</td>
+                <td>3x0</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos e Bulgária</td>
+                <td>28/08</td>
+                <td>3x0</td>
+            </tr>
+            <tr>
+                <td>Alemanha e Camarões</td>
+                <td>28/08</td>
+                <td>3x0</td>
+            </tr>
+            <tr>
+                <td>França e Eslovênia</td>
+                <td>28/08</td>
+                <td>3x2</td>
+            </tr>
+            <tr>
+                <td>Polônia e México</td>
+                <td>28/08</td>
+                <td>3x0</td>
+            </tr>
+            <tr>
+                <td colspan="3" > <a href="https://interior.ne10.uol.com.br/esportes/2022/08/15070097-campeonato-mundial-de-volei-masculino-2022-veja-o-resultado-dos-jogos-e-a-classificacao-do-brasil-no-grupo.html" target="blank"> Clique aqui para mais resultados</a></td>
+            </tr>
+        </table>
     </aside>
 
-    <footer>
-        <p>footer</p>
+    <footer class="haikyuuIndex">
+        <img src="imagens/png/Kageyama-Hinata.png" alt="">
     </footer>
     
 </body>
