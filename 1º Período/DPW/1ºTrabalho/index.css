@@ -5,17 +5,21 @@
 }
 
 /* ORGANIZAÇÃO DA TELA */
-h2{
+h1{
     color: #000000;
     padding: 20px;
     font-size: 35px;
     text-shadow: 2px 2px #F19200;
 }
 
-h1{
-    padding: 10px;
-    font-size: 23px;
+h2{
+    padding: 20px;
+    font-size: 30px;
     text-shadow: 2px 2px #F19200;
+}
+
+h4{
+    padding: 10px;
 }
 
 body{
@@ -51,6 +55,7 @@ aside{
 footer{
     text-align: left;
     height: 500px;
+    width: 100%;
     display: block;
 }
 
@@ -88,13 +93,13 @@ table{
     text-decoration: none;
 }
 
-a:hover{
+.menuElemento a:hover{
     color: darkorange;
+    background-color: #2c2c2c;
 }
 
 /* ELEMENTOS MAIN */
 .destaque1{
-
     display: flex;
 }
 .destaque2{
@@ -128,6 +133,17 @@ a:hover{
 
 p{
     padding: 10px;
+    font-size: 20px;
+}
+
+h3{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.img1Historia{
+    width: 500px;
+    padding-left: 20px;
 }
 
 /* ASIDE */
@@ -138,17 +154,22 @@ p{
     padding: 5px;
 }
 
-.tabelaJogo a{
+a{
     color: #000000;
+    text-decoration: none;
 }
 
 a:hover{
     color: darkorange;
+    background-color: #ffffff;
 }
 
 /* FOOTER */
 
 .haikyuuIndex img{
-    width: 150px;
-    float: left;
+    width: 100px;
+    float: right;
+    position: absolute;
+    top: 1000px;
+    right: 10px;
 }
