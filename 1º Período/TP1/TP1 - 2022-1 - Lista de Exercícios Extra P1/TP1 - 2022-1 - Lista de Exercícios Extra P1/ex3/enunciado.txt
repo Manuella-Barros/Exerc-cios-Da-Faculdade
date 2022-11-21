@@ -1,0 +1,1 @@
+Crie um programa que lê um valor real n e imprime n arredondado para cima ou para baixo. Se a parte decimal ≥ 0.5 então arredonda para cima, senão arredonda para baixo. Importante: implemente sem usar comandos de seleção (para aqueles que já conhecem).

@@ -1,0 +1,6 @@
+Crie um programa que pergunta quanto ganha um funcionário por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 8% para o INSS, 15% para o Imposto de Renda, e 2% para o sindicato. O desconto do INSS é sobre o salário bruto e o desconto do IR e sindicato é sobre o salário bruto – desconto INSS. O programa deve apresentar:
+    Salário bruto
+    Quanto pagou ao INSS
+    Quanto pagou de IR
+    Quanto pagou ao sindicato
+    Salário líquido

@@ -1,0 +1,1 @@
+Uma pessoa dedica M minutos/dia e D dias/semana à leitura. Crie um programa que lê M e D e imprime a quantidade de horas e minutos dedicadas por ano à leitura. Além disso, leia a velocidade de leitura (páginas por minuto) e imprima a quantidade de páginas completas lidas por ano. Dica: um ano tem 52 semanas
