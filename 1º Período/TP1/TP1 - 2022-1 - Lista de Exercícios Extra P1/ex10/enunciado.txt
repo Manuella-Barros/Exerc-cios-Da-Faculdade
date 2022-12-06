@@ -1,0 +1,1 @@
+Leia as duas notas de um aluno e imprima a média aritmética. As notas devem estar no intervalo de 0..10. Caso não estejam, o programa deve apresentar uma mensagem de erro e solicitá-las novamente até o usuário digitar um valor válido.

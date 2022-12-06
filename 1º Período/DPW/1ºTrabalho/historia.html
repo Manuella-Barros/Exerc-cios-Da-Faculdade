@@ -5,38 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Volei-História</title>
+    <link rel="stylesheet" href="normalize.css">
+    <title>Volei História</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="imagens/png/logo.png" alt="logo">
+        <div class="logo">
+            <img src="imagens/png/logo.png" alt="Logo All Volei">
+        </div>
     </header>
 
     <nav>
-        <table>
-            <tr>
-                <td  class="menuElemento">
-                    <a href="index.html"> &nbsp; Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
-                </td>
-                <td  class="menuElemento">
-                    <a href="historia.html"> História &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
-                </td>
-                <td class="menuElemento">
-                    <a href="quiz.html"> Quiz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
-                </td>
-                <td class="menuElemento">
-                    <a href="curiosidades.html"> Curiosidades &nbsp; </a>
-                </td>
-            </tr>
-        </table>
+        <div class="menu">
+            <table>
+                <tr>
+                    <th class="menuElemento"> <a href="index.html"> Inicio </a></th>
+                    <th class="menuElemento"> <a href="historia.html"> História </a></th>
+                    <th class="menuElemento"> <a href="quiz.html"> Quiz </a></th>
+                    <th class="menuElemento"> <a href="curiosidades.html"> Curiosidades</a></th>
+                </tr>
+            </table>
+        </div>
     </nav>
 
-    <main style="width: 100%;" class="mainHistoria">
-        <h2 style="text-align: center;">Um pouco sobre a história do volei</h2>
-        <h3>A origem do volei</h3>
-        <img src="imagens/noticia2.png" alt="Jogadoras de volei conversando" class="img1Historia">
-        <p>
-            O vôlei foi criado em 1895, pelo americano William G. Morgan, então diretor de educação física da Associação Cristã de Moços (ACM) na cidade de Holyoke, em Massachusetts, nos Estados Unidos.
+    <main id="mainHistoria">
+        <h1>Um pouco sobre a história do volei</h1>
+        <h2 style="padding: 20px; padding-top: 30px">A origem do volei</h2>
+        <div>
+            <div style="display: inline-block;" >
+                <img src="imagens/noticia2.png" alt="Jogadoras de volei conversando" id="img1Historia">  
+            </div>
+
+            <div style="display: inline-block;" >
+                <table id="navegacaoHistoria">
+                    <tr>
+                        <td colspan="3">Menu de navegação dessa página</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#origem">Origem</a></td>
+                        <td><a href="#outrosPaises">Outros países</a></td>
+                        <td><a href="#campeonato">Campeonatos</a></td>
+                    </tr>
+                </table>                
+            </div>
+
+        </div>
+
+        <p id="origem">
+            O vôlei foi criado em 1895, pelo americano William G. Morgan, diretor de educação física da Associação Cristã de Moços (ACM) na cidade de Holyoke, em Massachusetts, nos Estados Unidos.
         </p>
         <p>
             Morgan teve o tênis como inspiração para a criação do voleibol: redes, quadra e a lógica de passar e repassar a bola de um lado para o outro. Entretanto, desejava que sua modalidade não exigisse tantos materiais e recursos, isto é, que fosse mais prática e democrática que o tênis. Assim, nascia o voleibol, um esporte que podia ser jogado em áreas cobertas ou fechadas, com mais ou menos pessoas, e que não requeria materiais específicos (a bola era passada pelas próprias mãos dos jogadores)
@@ -50,9 +66,9 @@
         <p>
             A primeira quadra de Voleibol tinha as seguintes medidas: 15,24m de comprimento por 7,62m de largura. A rede tinha a largura de 0,61m. O comprimento era de 8,235m, sendo a altura de 1,98m (do chão ao bordo superior). A bola era feita de uma câmara de borracha coberta de couro ou lona de cor clara e tinha por circunferência de 63,7 a 68,6 cm e seu peso era de 252 a 336g.
         </p>
-        <a href="https://www.youtube.com/watch?v=ki_ZTZhDFZI&t=179s&ab_channel=DicasEduca%C3%A7%C3%A3oF%C3%ADsica" target="blank"><img src="imagens/capaVideo.png" alt="História do voleibol" > Clique na imagem para assistir mais um pouco sobre a histólria do voleibol </a>
+        <a href="https://www.youtube.com/watch?v=ki_ZTZhDFZI&t=179s&ab_channel=DicasEduca%C3%A7%C3%A3oF%C3%ADsica" target="blank" ><img src="imagens/capaVideo.png" alt="História do voleibol" id="videoHistoria"> Clique na imagem para assistir mais um pouco sobre a histólria do voleibol </a>
 
-        <h3>A chegada do vôlei em vários países do mundo</h3>
+        <h2 id="outrosPaises" style="padding: 20px; padding-top: 30px">A chegada do vôlei em vários países do mundo</h2>
         <p>
             Em 1896, foi publicado o primeiro artigo sobre o volley ball, escrito por J.Y. Cameron na edição do "Physical Education" na cidade de Búfalo, Nova Iorque. Este artigo trazia um pequeno resumo sobre o jogo e de suas regras de maneira geral. No ano seguinte, estas regras foram incluídas oficialmente no primeiro handbook oficial da Liga Atlética da Associação Cristã de Moços da América do Norte.
         </p>
@@ -68,7 +84,26 @@
         <p>
             Contando atualmente com 163 países filiados, tinha os seguintes 14 membros quando foi fundada: Brasil, Bélgica, Egito, Estados Unidos, França, Holanda, Hungria, Itália, Iugoslávia, Polônia, Portugal, Romênia, Checoslováquia e Uruguai.
         </p>
+
+        <h2 style="padding: 20px; padding-top: 30px" id="campeonato">Campeonatos</h2>
+        <h3><strong>Lista das principais competições do voleibol</strong></h3>
+        <div id="campeonatos">
+            <ul>
+                <li>Olimpíada</li>
+                <li>Campeonato Mundial de Vôlei</li>
+                <li>Copa do Mundo de Vôlei</li>
+                <li>Liga das Nações</li>
+                <li>Liga Mundial</li>
+                <li>Grand Prix</li>
+                <li>Campeonato Sul-Americano de voleibol</li>
+                <li>Superliga Masculina e Feminina de Vôlei</li>
+            </ul>
+        </div>
     </main>
+
+    <aside>
+        
+    </aside>
 
     <footer>
 

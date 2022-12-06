@@ -61,4 +61,5 @@ int main(void){
             printf("Reprovado");
         }
     }
+    printf("\nmedia = %.2f", media);
 }

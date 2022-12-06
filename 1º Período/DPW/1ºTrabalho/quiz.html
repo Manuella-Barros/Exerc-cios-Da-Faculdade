@@ -5,50 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Volei-Quiz</title>
+    <link rel="stylesheet" href="normalize.css">
+    <title>Volei Quiz</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="imagens/png/logo.png" alt="logo">
+        <div class="logo">
+            <img src="imagens/png/logo.png" alt="Logo All Volei">
+        </div>
     </header>
 
     <nav>
-        <table>
-            <tr>
-                <td  class="menuElemento">
-                    <a href="index.html"> &nbsp; Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
-                </td>
-                <td  class="menuElemento">
-                    <a href="historia.html"> História &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
-                </td>
-                <td class="menuElemento">
-                    <a href="quiz.html"> Quiz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
-                </td>
-                <td class="menuElemento">
-                    <a href="curiosidades.html"> Curiosidades &nbsp; </a>
-                </td>
-            </tr>
-        </table>
+        <div class="menu">
+            <table>
+                <tr>
+                    <th class="menuElemento"> <a href="index.html"> Inicio </a></th>
+                    <th class="menuElemento"> <a href="historia.html"> História </a></th>
+                    <th class="menuElemento"> <a href="quiz.html"> Quiz </a></th>
+                    <th class="menuElemento"> <a href="curiosidades.html"> Curiosidades</a></th>
+                </tr>
+            </table>
+        </div>
     </nav>
 
-    <main style="padding: 10px;">
-        <h1>Está preparado para um Quiz?</h1>
-        <h3>É recomendado que você tenha lido as páginas História e Curiosidades para fazer esse quiz </h3>
-        <hr> <!--        CADE A MERDA DA BARRA HORIZONTAL CACETE, COLOCAR UM BARRA AQUI             -->
+    <main>
+        <h1 style="padding: 10px;">Está preparado para testar seus conhecimentos sobre volei?</h1>
+        <h2 style="padding: 10px;">Para responder esse quiz é necessário que tenha lido as páginas sobre história e curiosidades</h2>
 
-        <!--                    oxi cade a bolinha da minha lista?                            -->
-        <p> Em qual ano o americano William G. Morgan criou o vôlei?  <input type="number"></p>
+        <form>
+            <div id="quiz">
+                <p><br><br>
+                    1 - Qual foi o primeiro nome dado ao esporte? <input type="text" name="quiz" id="textoNome">
+                </p>       
+                <p>
+                    2 - Qual ano o volei foi criado? <input type="number" name="quiz" id="anoNumber" min="1900" max="2022">
+                </p>     
+                <p>
+                    3 - Em média, quantos pulos um jogador da por partida? <br>
+                        <input type="radio" name="pulos" id="pulos1"> De 30 a 60 <br> 
+                        <input type="radio" name="pulos" id="pulos2"> De 60 a 100 <br>
+                        <input type="radio" name="pulos" id="pulos3"> De 100 a 140 <br> 
+                        <input type="radio" name="pulos" id="pulos4"> De 140 a 180 
+                </p>
+                <p>
+                    4 - Qual era o material da bola de volei no inicio? <br>
+                        <input type="radio" name="bola" id="bola1"> Pele de porco <br> 
+                        <input type="radio" name="bola" id="bola2"> Plástico <br> 
+                        <input type="radio" name="bola" id="bola3"> Uma câmara de borracha coberta de couro
+                </p>
+                <p>
+                    5 - Nos anos 80 houve uma regra de que não podia parar a partida para secar a quadra? <br>
+                        <input type="radio" name="regra" id="regra1"> Falso <br>
+                        <input type="radio" name="regra" id="regra2"> Verdade
+                </p>
+                <p >
+                    6 - Marque as alternativas corretas: <br>
+                        <input type="checkbox" name="marque" id="marque1"> A primeira quadra de Voleibol tinha as seguintes medidas: 40m de comprimento por 20m de largura<br>
+                        <input type="checkbox" name="marque" id="marque2">  A rede tinha a largura de 0,61m <br> 
+                        <input type="checkbox" name="marque" id="marque3"> O peso da bola era de 252 a 336g. <br>
+                        <input type="checkbox" name="marque" id="marque4"> A bola era feita de pele de porco<br>
+                </p>
+                <p>
+                    7 - "É um tipo de saque que nada mais é que um Saque por cima combinado com uma corrida para ganhar impulsão, um salto e um golpe com potência na bola". Qual o nome desse saque? <br>
+                        <input type="radio" name="saque" id="saque1">Saque por baixo<br>
+                        <input type="radio" name="saque" id="saque2">Saque por cima<br>
+                        <input type="radio" name="saque" id="saque3">Saque viagem<br>
+                        <input type="radio" name="saque" id="saque4">Saque de peixinho
+                </p>
+                <p>
+                    8 - "O voleibol é o único esporte olímpico que treina todos os músculos do corpo do jogador e mais cansa o jogador". Essa afirmativa está: <br>
+                        <input type="radio" name="musculo" id="musculo1"> Falso <br>
+                        <input type="radio" name="musculo" id="musculo2"> Verdade 
+                </p>
+                <p>
+                    9 - O jogo de voleibol com maior público da História foi em qual lugar? <br>
+                        <input type="radio" name="publico" id="publico1"> Brasil <br>
+                        <input type="radio" name="publico" id="publico2"> Russia <br>
+                        <input type="radio" name="publico" id="publico3"> Inglaterra
+                </p>
+                <p>
+                    10 - A partida de voleibol mais demorada da História durou quantas horas? <br>
+                        <input type="radio" name="horas" id="horas1"> 16 horas <br>
+                        <input type="radio" name="horas" id="horas2"> 9 horas <br>
+                        <input type="radio" name="horas" id="horas3"> 4 horas 
+                </p>
+                <div style="text-align: center;">
+                    <p> 
+                        <button type="button" onclick="alert('Respostas: \n1 - Mintonette \n2 - 1895 \n3 - De 60 a 100 \n4 - Uma câmara de borracha coberta de couro \n5 - Verdade \n6 -  A rede tinha a largura de 0,61m e o peso da bola era de 252 a 336g \n7 - Saque viagem \n8 - Falso \n9 - Brasil \n10 - 4 horas')"> <strong> Clique aqui para ver as respostas</strong></button>
+                    </p>                    
+                </div>
 
-        <p> Qual era o peso das primeiras bolas de volei? <input type="number"></p>
-
+            </div>            
+        </form>
     </main>
 
     <aside>
-        
+
     </aside>
 
     <footer>
 
-    </footer>    
+    </footer>
 </body>
 </html>
