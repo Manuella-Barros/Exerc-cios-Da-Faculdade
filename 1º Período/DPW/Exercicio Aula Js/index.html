@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML + JS</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1 style="text-align: center;">Exercicios de aula 13/12/22</h1>
+
+        <!-- EX 1 -->
+        <h2><span style="color: red;">Ex 1)</span> Mudar a cor dos parágrafos com JS</h2>
+        <p id="1">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <p id="2">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <p id="3">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <input type="button" value="Clique aqui" onclick="clicouParagrafo()">
+
+        <!-- EX2 -->
+        <h2><span style="color: red;">Ex 2)</span> Mudar as imagens com um botão</h2>
+
+        <!-- A) -->
+        <h3><span style="color: red;">a)</span> Fazendo em um ordem certa</h3>
+        <div> <img style="width: 20vw;" id="fotoA" src="https://almeidajunior-prod1.s3.amazonaws.com/prod/uploads/news/5d81505ac6770.jpg" alt=""></div>
+        <input type="button" value="Aperte aqui" onclick="mudarFotoA()">
+
+        <!-- B) -->
+        <h3><span style="color: red;">b)</span> Fazendo sem uma ordem certa (Math.random)</h3>
+        <div> <img style="width: 20vw;" id="fotoB" src="https://almeidajunior-prod1.s3.amazonaws.com/prod/uploads/news/5d81505ac6770.jpg" alt=""></div>
+        <input type="button" value="Aperte aqui" onclick="mudarFotoB()">
+
+        <!-- C) -->
+        <h3><span style="color: red;">c)</span> Fazendo sem uma ordem certa e sem repetir</h3>
+        <div> <img style="width: 20vw;" id="fotoC" src="https://almeidajunior-prod1.s3.amazonaws.com/prod/uploads/news/5d81505ac6770.jpg" alt=""></div>
+        <input type="button" value="Aperte aqui" onclick="mudarFotoC()">
+
+        <!-- EX3 -->
+        <h2><span style="color: red;">Ex 3)</span> Fazendo uma tabela com JS e fazendo aparecer o dia atual, e os 2 seguintes</h2>
+        <table id="tabela"> </table>
+
+        <script src="index.js"></script>
+    </body>
+</html>
