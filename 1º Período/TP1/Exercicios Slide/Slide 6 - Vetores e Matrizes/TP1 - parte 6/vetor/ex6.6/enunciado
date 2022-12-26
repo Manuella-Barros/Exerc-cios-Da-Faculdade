@@ -1,0 +1,1 @@
+Leia um número inteiro tam e crie um vetor v de inteiros de tamanho tam. Em seguida, leia os números desse vetor. Por fim, leia um número inteiro k e imprima as posições do vetor v onde existe um valor igual a k.
