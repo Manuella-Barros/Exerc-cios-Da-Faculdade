@@ -1,31 +1,24 @@
-/*
 #include <stdio.h>
-
-float calculoMedia(float notas[100]);
+const int TAM = 10;
 
 int main(void){
-    float notas[100];
-    float media;
+    float idade[TAM], media;
+    int soma = 0, quantidade = 0;
 
-    lerVetor(notas[100]);
+    for(int i = 0; i < TAM; i++){ //esse for pega a nota de cada aluno
+        printf("insira a idade do aluno %i ", i + 1);
+        scanf("%f", &idade[i]);
 
-    for(int i = 1; i <= 10; i++){ //esse for pega a nota de cada aluno
-        printf("insira a nota do aluno %i ", i);
-        scanf("%f", &notas[i]);
+        soma = soma + idade[i];
     }
 
-    for(int i = 1; i <= 10; i++){ //esse for pega a nota de cada aluno
-        printf("nota aluno %i = %.2f\n", i, notas[i]);
+    media = soma/TAM;
+
+    for(int i = 0; i < TAM; i++){ //esse for pega a nota de cada aluno
+        if(idade[i] > media){
+            quantidade++;
+        }
     }
 
-    //calculoMedia(&notas[100]); quando for passar o vetor assim tem q ser ponteiro
-    //calculoMedia(&notas[100]);
+    printf("Sao %i alunos acima da media\n", quantidade);
 }
-
-int lerVetor()
-
-float calculoMedia(float notas[100]){
-    printf("foi");
-    return 1;
-}
-*/
