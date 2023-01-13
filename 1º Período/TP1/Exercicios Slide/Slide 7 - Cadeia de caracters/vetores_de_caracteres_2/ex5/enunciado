@@ -1,0 +1,5 @@
+Escrever um programa para ler uma string (com mais de uma palavra) e faça com que a primeira letra de cada palavra fique em maiúscula. Para isso, basta subtrair 32 do elemento que deseja alterar para maiúsculo. chrNome[0] = chrNome[0] 32;
+
+Exemplo:
+    Entrada: lab. de linguagem de programacao
+    Saída: Lab. De Linguagem De Programacao

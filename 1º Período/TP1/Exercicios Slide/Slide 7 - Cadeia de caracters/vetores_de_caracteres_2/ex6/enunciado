@@ -1,0 +1,2 @@
+Escreva uma função que receba uma string, conte quantos caracteres desta string são iguais a 'a' e
+substitua os que forem iguais a 'a' por 'b'. A função deverá retornar o número de caracteres modificados
