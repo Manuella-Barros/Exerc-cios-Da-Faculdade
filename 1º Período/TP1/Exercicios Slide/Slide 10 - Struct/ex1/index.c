@@ -9,7 +9,7 @@ typedef struct dados_pessoas {// aqui eu crio a struct com o nome de dados_pesso
     float altura;
 } pessoas; //pessoas é o tipo q eu dei pra ela, um tipo como char, int e float
 
-int leDados(pessoas p, int contador);
+pessoas calculoIMC(pessoas p[]);
 
 int main(void){
     pessoas p[5];
@@ -25,7 +25,11 @@ int main(void){
         scanf("%f", &p[i].altura);
     }
 
-    for(int n = 0; n < 5; n++){
+    calculoIMC(p);
+}
+
+pessoas calculoIMC(pessoas p[]){
+   for(int n = 0; n < 5; n++){
         printf("\n\nNome: %s\n", p[n].nome);
         printf("IMC: %.2f\n", p[n].peso / (p[n].altura * p[n].altura));//calculo imc
     }
