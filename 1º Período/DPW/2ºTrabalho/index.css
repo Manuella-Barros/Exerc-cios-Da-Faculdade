@@ -1,0 +1,1229 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*-------------------------------------------- TEXTO -------------------------------------------------*/
+h1{
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+    font-size: 3vw;
+    text-shadow: 2px 2px #F19200;
+}
+.tabelaJogo caption{
+    font-size: 1.7vw;
+}
+h2{
+    font-size: 2.4vw;
+    padding: 10px;
+}
+p{
+    font-size: 1.6vw;
+    padding: 10px;
+}
+h3{
+    font-size: 1.7vw;
+    padding: 10px;
+}
+
+/*-------------------------------------------- HEADER ----------------------------------------------  */
+.logo{
+    text-align: center;
+}
+
+/*--------------------------------------------- NAV --------------------------------------------------*/
+.menu{
+    width: 100%;
+    padding-left: 27vw;
+    padding-right: 29vw;
+    padding-bottom: 50px;
+}
+.menuElemento{
+    align-items: center;    
+    padding-left: 10px;
+    font-size: 2.2vw;
+    color: rgb(255, 255, 255);
+
+}
+.menu table{
+    border: solid black;
+    background-color: rgb(0, 0, 0);
+}
+.menuElemento a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.menuElemento a:hover{
+    color: darkorange;
+    background-color: rgb(44, 24, 0);
+}
+
+/*--------------------------------------------- MAIN -----------------------------------------------*/
+/*INICIO*/
+.main{
+    float: left;
+    width: 70vw;
+}
+#foto1, #foto2, #foto3{
+    list-style: none;
+    width: 30vw;
+}
+.container{
+    list-style: none;
+    display: inline-block;
+}
+#Img1Hinata{
+    padding-left: 320px;
+}
+#img2Hinata{
+    padding-left: 220px;
+    width: 22vw;
+}
+#img3Hinata{
+    padding-left: 180px;
+    width: 30vw;
+}
+
+/*HISTORIA*/
+#img1Historia{
+    width: 40vw;
+    padding-left: 10px;
+    float: left;
+}
+#mainHistoria p{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#mainHistoria li, #mainHistoria ul{
+    left: 20px;
+    font-size: 1.5vw;
+}
+#campeonatos{
+    padding-left: 50px;
+}
+#navegacaoHistoria{
+    float: right;
+    height: 8vw;
+    width: 40vw;
+    font-size: 1.6vw;
+}
+#navegacaoHistoria td, #navegacaoHistoria tr{
+    text-align: center;
+    padding: 0;
+    border: #000000 solid;
+}
+#textoMain p::first-letter{
+    color: rgb(253, 166, 59);;
+    font-size: 2vw;
+}
+#textoMain p:hover{
+    font-size: 1.8vw;
+}
+#videoHistoria{
+    padding: 10px; 
+    width: 20vw; 
+    font-size: 100px;
+    font-size: 1.5vw;
+}
+.botaoHistoria{
+    width: 18vw; 
+    height: 2.7vw; 
+    font-size: 1.3vw;
+}
+
+/* CURIOSIDADES */
+#InformacoesVideo{
+    font-size: 1.8vw;
+    padding: 30px;
+}
+#InformacoesVideo li{
+    padding: 11px;
+    color: rgb(0, 0, 0);
+    font-size: 1.6vw;
+}
+.InformacoesVideoTitulos{
+    text-shadow: 1px 1px 10px rgb(255, 175, 77);
+    font-size: 2vw;
+}
+#saqueViagem{
+    width: 20vw;
+}
+#peixinho{
+    width: 20vw;
+}
+.videoHaikyuu{
+    width: 25vw;
+}
+#img1CarroselCuriosidades, #img3CarroselCuriosidades{
+    width: 31.64vw;
+    height: 18vw;
+}
+#img2CarroselCuriosidades{
+    width: 34.64vw;
+    height: 23vw;
+}
+
+/* QUIZ */
+
+#textoNome, #anoNumber, #fonteCuriosidades, #corLetraCuriosidades, #corBackgroundCuriosidades, #textoUsuario, #diaNascimento, #mesNascimento, #anoNascimento{
+    border: solid #000000 1px;
+    border-radius: 9%;
+    font-size: 1.3vw;
+}
+button{
+    color: #da8300;
+    border: solid #aa6600;
+    background-color: #ffa41c;
+    width: 23vw;
+    font-size: 1.3vw;
+    height: 3vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+button:hover{
+    color: #da0000;
+    border: solid rgb(170, 0, 0);
+    background-color: #ff491ccb;
+    width: 24vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    text-align: center;
+}
+
+/*--------------------------------------------- ASIDE -----------------------------------------------*/
+.aside{
+    /*background-color: crimson;*/
+    float: right;
+    width: 27vw;
+}
+.tabelaJogo td, .tabelaJogo th{
+    border: solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3vw;
+}
+.tabelaJogo th{
+    background-color: #ffa620;
+}
+.tabelaJogo tr:nth-child(odd) {
+    background-color: #ff990034;
+}
+#imagemHinataCanto{
+    width: 27vw;
+}
+a{
+    color: rgb(22, 0, 0);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(231, 150, 0);
+    background-color: #f191002a;
+}
+#calendario {
+    padding-top: 55px;
+    position: relative;
+    width: 30vw;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#calendario h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3vw;
+}
+#calendario #diasSemana{
+    display: flex;
+}
+#calendario .diasSemanaNome{
+    width: 1.3vw;
+    height: 3vw;
+    display: flex;
+    padding: 0vw 1.6vw;
+    font-size: 1.4vw;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid #ff951b 2px;
+    border-top: solid #ff951b 2px;
+    text-transform: capitalize;
+}
+#calendario .diasSemanaNome:first-child{
+    border-left: solid #ff951b 2px;
+}
+#calendario .diasSemanaNome:last-child{
+    border-right: solid #ff951b 2px;
+}
+#calendario #diasMes {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4vw;
+    justify-content: space-between;
+}
+#calendario #diasMes .diasMesNum {
+    display: flex;
+    height: 4vw;
+    width: 4.36vw;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+#ano{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3vw;
+}
+#calendario #diasMes .diasMesNumAnterior, #calendario #diasMes .diasMesNumSeguinte{
+    color: #8d8a8a;
+    display: flex;
+    height: 4vw;
+    width: 4.36vw;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+#calendario #diasMes .diasMesNumAnterior:hover, #calendario #diasMes .diasMesNumSeguinte:hover{
+    background-color: #f1f1f1;
+}
+#calendario #diasMes .diasMesNum:hover{
+    background-color: #ffd17a;
+    color: white;
+    font-weight: 800;
+    font-size: 2vw;
+}
+#calendario #diasMes .diaAtual{
+    background-color: #ffd17a;
+    color: white;
+    font-weight: 500;
+    font-size: 1.8vw;
+    display: flex;
+    height: 4vw;
+    width: 4.36vw;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .main, .aside{
+        display: block;
+        width: 100vw;
+    }
+    ul{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 3.2vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        font-size: 2vw;
+    }
+    #campeonatos li, #InformacoesVideo li, #InformacoesVideo span{
+        font-size: 3vw;
+    }
+    .tabelaJogo caption{
+        font-size: 2vw;
+    }
+    #calendario {
+        padding-top: 5px;
+        position: relative;
+        width: 10vw;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #calendario h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5vw;
+    }
+    #calendario #diasSemana{
+        display: flex;
+    }
+    #calendario .diasSemanaNome{
+        width: 5vw;
+        height: 8vw;
+        display: flex;
+        padding: 0vw 1.6vw;
+        font-size: 3vw;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid #ff951b 2px;
+        border-top: solid #ff951b 2px;
+        text-transform: capitalize;
+    }
+    #calendario .diasSemanaNome:first-child{
+        border-left: solid #ff951b 2px;
+    }
+    #calendario .diasSemanaNome:last-child{
+        border-right: solid #ff951b 2px;
+    }
+    #calendario #diasMes {
+        font-size: 4vw;
+    }
+    #calendario #diasMes .diasMesNum {
+        height: 10vw;
+        width: 6vw;
+    }
+    #ano{
+        font-size: 8vw;
+    }
+    #calendario #diasMes .diasMesNumAnterior, #calendario #diasMes .diasMesNumSeguinte{
+        height: 10vw;
+        width: 6vw;
+    }
+    #calendario #diasMes .diaAtual{
+        font-weight: 500;
+        font-size: 4vw;
+        height: 10vw;
+        width: 6vw;
+    }
+    .menuElemento{
+        align-items: center;    
+        padding-left: 10px;
+        font-size: 4vw;
+        color: rgb(255, 255, 255);
+    }
+    .menu{
+        padding-left: 20vw;
+        padding-right: 29vw;
+        padding-bottom: 50px;
+    }
+    #navegacaoHistoria td{
+        font-size: 3vw;
+        height: 10vw;
+        width: 45vw;
+    }
+    #saqueViagem{
+        width: 50vw;
+    }
+    #peixinho{
+        width: 50vw;
+    }
+    .videoHaikyuu{
+        width: 50vw;
+    }
+    #videoHistoria{
+        padding: 10px; 
+        width: 40vw; 
+    }
+}
+@media screen and (max-width: 912px) {
+    .main, .aside{
+        display: block;
+        width: 100vw;
+    }
+    ul{
+        font-size: 4vw;
+    }
+    p{
+        font-size: 6vw;
+    }
+    h1{
+        font-size: 9vw;
+    }
+    h2{
+        font-size: 7vw;
+    }
+    h3{
+        font-size: 6vw;
+    }
+    #foto1, #foto2, #foto3{
+        width: 45vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        font-size: 5vw;
+    }
+    #campeonatos li, #InformacoesVideo li, #InformacoesVideo span{
+        font-size: 7vw;
+    }
+    .tabelaJogo caption{
+        font-size: 5vw;
+    }
+    #calendario {
+        padding-top: 5px;
+        position: relative;
+        width: 10vw;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #calendario h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5vw;
+    }
+    #calendario #diasSemana{
+        display: flex;
+    }
+    #calendario .diasSemanaNome{
+        width: 5vw;
+        height: 8vw;
+        display: flex;
+        padding: 0vw 1.6vw;
+        font-size: 3vw;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid #ff951b 2px;
+        border-top: solid #ff951b 2px;
+        text-transform: capitalize;
+    }
+    #calendario .diasSemanaNome:first-child{
+        border-left: solid #ff951b 2px;
+    }
+    #calendario .diasSemanaNome:last-child{
+        border-right: solid #ff951b 2px;
+    }
+    #calendario #diasMes {
+        font-size: 4vw;
+    }
+    #calendario #diasMes .diasMesNum {
+        height: 10vw;
+        width: 6vw;
+    }
+    #ano{
+        font-size: 8vw;
+    }
+    #calendario #diasMes .diasMesNumAnterior, #calendario #diasMes .diasMesNumSeguinte{
+        height: 10vw;
+        width: 6vw;
+    }
+    #calendario #diasMes .diaAtual{
+        font-weight: 500;
+        font-size: 4vw;
+        height: 10vw;
+        width: 6vw;
+    }
+    .menuElemento{
+        align-items: center;    
+        padding-left: 10px;
+        font-size: 4vw;
+        color: rgb(255, 255, 255);
+    }
+    .menu{
+        padding-left: 20vw;
+        padding-right: 29vw;
+        padding-bottom: 50px;
+    }
+    #navegacaoHistoria td{
+        font-size: 3vw;
+        height: 10vw;
+        width: 45vw;
+    }
+    #saqueViagem{
+        width: 50vw;
+    }
+    #peixinho{
+        width: 50vw;
+    }
+    .videoHaikyuu{
+        width: 50vw;
+    }
+    #videoHistoria{
+        padding: 10px; 
+        width: 40vw; 
+    }
+}
+@media screen and (max-width: 660px) {
+    .main, .aside{
+        display: block;
+        width: 100vw;
+    }
+    ul{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 4vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 3.2vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        font-size: 3vw;
+    }
+    #campeonatos li, #InformacoesVideo li, #InformacoesVideo span{
+        font-size: 3vw;
+    }
+    .tabelaJogo caption{
+        font-size: 2vw;
+    }
+    #calendario {
+        padding-top: 5px;
+        position: relative;
+        width: 10vw;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #calendario h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5vw;
+    }
+    #calendario #diasSemana{
+        display: flex;
+    }
+    #calendario .diasSemanaNome{
+        width: 5vw;
+        height: 8vw;
+        display: flex;
+        padding: 0vw 1.6vw;
+        font-size: 3vw;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid #ff951b 2px;
+        border-top: solid #ff951b 2px;
+        text-transform: capitalize;
+    }
+    #calendario .diasSemanaNome:first-child{
+        border-left: solid #ff951b 2px;
+    }
+    #calendario .diasSemanaNome:last-child{
+        border-right: solid #ff951b 2px;
+    }
+    #calendario #diasMes {
+        font-size: 4vw;
+    }
+    #calendario #diasMes .diasMesNum {
+        height: 10vw;
+        width: 6vw;
+    }
+    #ano{
+        font-size: 8vw;
+    }
+    #calendario #diasMes .diasMesNumAnterior, #calendario #diasMes .diasMesNumSeguinte{
+        height: 10vw;
+        width: 6vw;
+    }
+    #calendario #diasMes .diaAtual{
+        font-weight: 500;
+        font-size: 4vw;
+        height: 10vw;
+        width: 6vw;
+    }
+    .menuElemento{
+        align-items: center;    
+        padding-left: 10px;
+        font-size: 4vw;
+        color: rgb(255, 255, 255);
+    }
+    .menu{
+        padding-left: 20vw;
+        padding-right: 29vw;
+        padding-bottom: 50px;
+    }
+    #navegacaoHistoria td{
+        font-size: 3vw;
+        height: 10vw;
+        width: 45vw;
+    }
+    #saqueViagem{
+        width: 50vw;
+    }
+    #peixinho{
+        width: 50vw;
+    }
+    .videoHaikyuu{
+        width: 50vw;
+    }
+    #videoHistoria{
+        padding: 10px; 
+        width: 40vw; 
+    }
+}
+@media screen and (max-width: 540px) {/*NEST HUB*/
+    .main, .aside{
+        display: block;
+        width: 100vw;
+    }
+    p{
+        font-size: 4vw;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 6.4vw;
+    }
+    #foto1, #foto2, #foto3{
+        width: 35vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        padding: 20px;
+        font-size: 2vw;
+    }
+    .tabelaJogo td, .tabelaJogo th, .tabelaJogo caption{
+        font-size: 4vw;
+    }
+    #calendario {
+        padding-top: 5px;
+        position: relative;
+        width: 20vw;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #calendario h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 4vw;
+    }
+    #calendario #diasSemana{
+        display: flex;
+    }
+    #calendario .diasSemanaNome{
+        height: 8vw;        
+        width: 6vw;
+        display: flex;
+        padding: 0vw 1.6vw;
+        font-size: 4vw;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid #ff951b 2px;
+        border-top: solid #ff951b 2px;
+        text-transform: capitalize;
+    }
+    #calendario .diasSemanaNome:first-child{
+        border-left: solid #ff951b 2px;
+    }
+    #calendario .diasSemanaNome:last-child{
+        border-right: solid #ff951b 2px;
+    }
+    #calendario #diasMes {
+        font-size: 4vw;
+    }
+    #calendario #diasMes .diasMesNum {
+        height: 8vw;        
+        width: 8vw;
+    }
+    #ano{
+        font-size: 4vw;
+    }
+    #calendario #diasMes .diasMesNumAnterior, #calendario #diasMes .diasMesNumSeguinte{
+        height: 8vw;        
+        width: 8vw;
+    }
+    #calendario #diasMes .diaAtual{
+        font-weight: 500;
+        font-size: 4vw;
+        height: 8vw;        
+        width: 8vw;
+    }
+    #campeonatos li, #InformacoesVideo li, #InformacoesVideo span{
+        font-size: 4vw;
+    }
+    .menuElemento{
+        align-items: center;    
+        padding-left: 2px;
+        font-size: 4vw;
+        color: rgb(255, 255, 255);
+    }
+    .menu{
+        padding-left: 0vw;
+        padding-right: 9vw;
+        padding-bottom: 50px;
+    }
+    #navegacaoHistoria td{
+        font-size: 3vw;
+        height: 10vw;
+        width: 45vw;
+    }
+    #img1Historia{
+        width: 57vw;
+    }
+    .inputHistoria{
+        width: 13vw;
+        height: 5vw;
+    }
+    .botaoHistoria{
+        width: 43vw;
+        height: 15vw;;
+        font-size: 7vw;
+    }
+    #saqueViagem{
+        width: 50vw;
+    }
+    #peixinho{
+        width: 50vw;
+    }
+    .videoHaikyuu{
+        width: 50vw;
+    }
+    #videoHistoria{
+        padding: 10px; 
+        width: 40vw; 
+    }
+    #btn{
+        width: 57vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+    #botaoCuriosidade{
+        width: 57vw;
+        height: 10vw;
+        font-size: 6vw;
+    }
+    .alternativa1, .alternativa2, .alternativa3, .alternativa4, .alternativa5{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 460px) {
+    .main, .aside{
+        display: block;
+        width: 100vw;
+    }
+    p{
+        font-size: 2vw;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 8vw;
+    }
+    h3{
+        font-size: 6.4vw;
+    }
+    #foto1, #foto2, #foto3{
+        width: 90vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        padding: 20px;
+        font-size: 2vw;
+    }
+    .tabelaJogo td, .tabelaJogo th, .tabelaJogo caption{
+        font-size: 6vw;
+    }
+    #calendario {
+        padding-top: 5px;
+        position: relative;
+        width: 30vw;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #calendario h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 10vw;
+    }
+    #calendario #diasSemana{
+        display: flex;
+    }
+    #calendario .diasSemanaNome{
+        width: 10vw;
+        height: 11vw;
+        display: flex;
+        padding: 0vw 1.6vw;
+        font-size: 6vw;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid #ff951b 2px;
+        border-top: solid #ff951b 2px;
+        text-transform: capitalize;
+    }
+    #calendario .diasSemanaNome:first-child{
+        border-left: solid #ff951b 2px;
+    }
+    #calendario .diasSemanaNome:last-child{
+        border-right: solid #ff951b 2px;
+    }
+    #calendario #diasMes {
+        font-size: 6vw;
+    }
+    #calendario #diasMes .diasMesNum {
+        height: 16vw;
+        width: 12vw;
+    }
+    #ano{
+        font-size: 8vw;
+    }
+    #calendario #diasMes .diasMesNumAnterior, #calendario #diasMes .diasMesNumSeguinte{
+        height: 16vw;
+        width: 12vw;
+    }
+    #calendario #diasMes .diaAtual{
+        font-weight: 500;
+        font-size: 6vw;
+        height: 16vw;        
+        width: 12vw;
+    }
+    #campeonatos li, #InformacoesVideo li, #InformacoesVideo span{
+        font-size: 6vw;
+    }
+    .menuElemento{
+        align-items: center;    
+        padding-left: 2px;
+        font-size: 6vw;
+        color: rgb(255, 255, 255);
+    }
+    .menu{
+        padding-left: 0vw;
+        padding-right: 9vw;
+        padding-bottom: 50px;
+    }
+    #navegacaoHistoria td{
+        font-size: 3vw;
+        height: 10vw;
+        width: 45vw;
+    }
+    #img1Historia{
+        width: 57vw;
+    }
+    .inputHistoria{
+        width: 13vw;
+        height: 5vw;
+    }
+    .botaoHistoria{
+        width: 43vw;
+        height: 15vw;;
+        font-size: 7vw;
+    }
+    #saqueViagem{
+        width: 50vw;
+    }
+    #peixinho{
+        width: 50vw;
+    }
+    .videoHaikyuu{
+        width: 50vw;
+    }
+    #videoHistoria{
+        padding: 10px; 
+        width: 40vw; 
+    }
+    #btn{
+        width: 57vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+    #botaoCuriosidade{
+        width: 57vw;
+        height: 10vw;
+        font-size: 6vw;
+    }
+    .alternativa1, .alternativa2, .alternativa3, .alternativa4, .alternativa5{
+        font-size: 6vw;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .main, .aside{
+        display: block;
+        width: 100vw;
+    }
+    p{
+        font-size: 7vw;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 8vw;
+    }
+    h3{
+        font-size: 6.4vw;
+    }
+    #foto1, #foto2, #foto3{
+        width: 45vw;
+    }
+    .tabelaJogo caption{
+        font-size: 4vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        padding: 20px;
+        font-size: 3vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        font-size: 5vw;
+    }
+    #calendario {
+        padding-top: 5px;
+        position: relative;
+        width: 30vw;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #calendario h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 10vw;
+    }
+    #calendario #diasSemana{
+        display: flex;
+    }
+    #calendario .diasSemanaNome{
+        width: 10vw;
+        height: 11vw;
+        display: flex;
+        padding: 0vw 1.6vw;
+        font-size: 6vw;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid #ff951b 2px;
+        border-top: solid #ff951b 2px;
+        text-transform: capitalize;
+    }
+    #calendario .diasSemanaNome:first-child{
+        border-left: solid #ff951b 2px;
+    }
+    #calendario .diasSemanaNome:last-child{
+        border-right: solid #ff951b 2px;
+    }
+    #calendario #diasMes {
+        font-size: 6vw;
+    }
+    #calendario #diasMes .diasMesNum {
+        height: 16vw;
+        width: 12vw;
+    }
+    #ano{
+        font-size: 8vw;
+    }
+    #calendario #diasMes .diasMesNumAnterior, #calendario #diasMes .diasMesNumSeguinte{
+        height: 16vw;
+        width: 12vw;
+    }
+    #calendario #diasMes .diaAtual{
+        font-weight: 500;
+        font-size: 6vw;
+        height: 16vw;        
+        width: 12vw;
+    }
+    #campeonatos li, #InformacoesVideo li, #InformacoesVideo span{
+        font-size: 6vw;
+    }
+    .menuElemento{
+        align-items: center;    
+        padding-left: 2px;
+        font-size: 5.7vw;
+        color: rgb(255, 255, 255);
+    }
+    .menu{
+        padding-left: 0vw;
+        padding-right: 19vw;
+        padding-bottom: 50px;
+    }
+    #navegacaoHistoria td{
+        font-size: 7vw;
+        height: 10vw;
+        width: 45vw;
+    }
+    #img1Historia{
+        width: 57vw;
+    }
+    .inputHistoria{
+        width: 13vw;
+        height: 5vw;
+    }
+    .botaoHistoria{
+        width: 43vw;
+        height: 15vw;;
+        font-size: 7vw;
+    }
+    #saqueViagem{
+        width: 50vw;
+    }
+    #peixinho{
+        width: 50vw;
+    }
+    .videoHaikyuu{
+        width: 50vw;
+    }
+    #videoHistoria{
+        padding: 10px; 
+        width: 40vw; 
+    }
+    #btn{
+        width: 57vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+    #botaoCuriosidade{
+        width: 57vw;
+        height: 10vw;
+        font-size: 6vw;
+    }
+    .alternativa1, .alternativa2, .alternativa3, .alternativa4, .alternativa5{
+        font-size: 6vw;
+    }
+    #img1CarroselCuriosidades, #img3CarroselCuriosidades, #img2CarroselCuriosidades{
+        width: 32.5vw;
+    }
+}
+@media screen and(max-width: 375px) {
+    .main, .aside{
+        display: block;
+        width: 100vw;
+    }
+    p{
+        font-size: 7vw;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 8vw;
+    }
+    h3{
+        font-size: 6.4vw;
+    }
+    #foto1, #foto2, #foto3{
+        width: 45vw;
+    }
+    .tabelaJogo caption{
+        font-size: 4vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        padding: 20px;
+        font-size: 3vw;
+    }
+    .tabelaJogo td, .tabelaJogo th{
+        font-size: 5vw;
+    }
+    #calendario {
+        padding-top: 5px;
+        position: relative;
+        width: 30vw;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #calendario h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 10vw;
+    }
+    #calendario #diasSemana{
+        display: flex;
+    }
+    #calendario .diasSemanaNome{
+        width: 10vw;
+        height: 11vw;
+        display: flex;
+        padding: 0vw 1.6vw;
+        font-size: 6vw;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid #ff951b 2px;
+        border-top: solid #ff951b 2px;
+        text-transform: capitalize;
+    }
+    #calendario .diasSemanaNome:first-child{
+        border-left: solid #ff951b 2px;
+    }
+    #calendario .diasSemanaNome:last-child{
+        border-right: solid #ff951b 2px;
+    }
+    #calendario #diasMes {
+        font-size: 6vw;
+    }
+    #calendario #diasMes .diasMesNum {
+        height: 16vw;
+        width: 12vw;
+    }
+    #ano{
+        font-size: 8vw;
+    }
+    #calendario #diasMes .diasMesNumAnterior, #calendario #diasMes .diasMesNumSeguinte{
+        height: 16vw;
+        width: 12vw;
+    }
+    #calendario #diasMes .diaAtual{
+        font-weight: 500;
+        font-size: 6vw;
+        height: 16vw;        
+        width: 12vw;
+    }
+    #campeonatos li, #InformacoesVideo li, #InformacoesVideo span{
+        font-size: 6vw;
+    }
+    .menuElemento{
+        align-items: center;    
+        padding-left: 2px;
+        font-size: 5.7vw;
+        color: rgb(255, 255, 255);
+    }
+    .menu{
+        padding-left: 0vw;
+        padding-right: 19vw;
+        padding-bottom: 50px;
+    }
+    #navegacaoHistoria td{
+        font-size: 7vw;
+        height: 10vw;
+        width: 45vw;
+    }
+    #img1Historia{
+        width: 57vw;
+    }
+    .inputHistoria{
+        width: 13vw;
+        height: 5vw;
+    }
+    .botaoHistoria{
+        width: 43vw;
+        height: 15vw;;
+        font-size: 7vw;
+    }
+    #saqueViagem{
+        width: 50vw;
+    }
+    #peixinho{
+        width: 50vw;
+    }
+    .videoHaikyuu{
+        width: 50vw;
+    }
+    #videoHistoria{
+        padding: 10px; 
+        width: 40vw; 
+    }
+    #btn{
+        width: 57vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+    #botaoCuriosidade{
+        width: 57vw;
+        height: 10vw;
+        font-size: 6vw;
+    }
+    .alternativa1, .alternativa2, .alternativa3, .alternativa4, .alternativa5{
+        font-size: 6vw;
+    }
+    #img1CarroselCuriosidades, #img3CarroselCuriosidades, #img2CarroselCuriosidades{
+        width: 32.5vw;
+    }
+}

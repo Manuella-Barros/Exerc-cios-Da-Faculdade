@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Volei Quiz</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/png/logo.png" alt="Logo All Volei">
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <table>
+                <tr>
+                    <th class="menuElemento"> <a href="index.html"> Inicio </a></th>
+                    <th class="menuElemento"> <a href="historia.html"> História </a></th>
+                    <th class="menuElemento"> <a href="quiz.html"> Quiz </a></th>
+                    <th class="menuElemento"> <a href="curiosidades.html"> Curiosidades</a></th>
+                </tr>
+            </table>
+        </div>
+    </nav>
+
+    <main>
+        <h1 style="padding: 10px;">Está preparado para testar seus conhecimentos sobre volei?</h1>
+        <h2 style="padding: 10px;">Para responder esse quiz é necessário que tenha lido as páginas sobre história e curiosidades</h2>
+
+        <form>
+            <div id="quiz">
+                <div id="pergunta1"></div>
+                <ul style="list-style-type: none;">
+                    <li class="alternativa1"></li>
+                    <li class="alternativa1"></li>
+                    <li class="alternativa1"></li>
+                </ul>
+                <div id="pergunta2"></div>
+                <ul style="list-style-type: none;">
+                    <li class="alternativa2"></li>
+                    <li class="alternativa2"></li>
+                    <li class="alternativa2"></li>
+                </ul>
+                <div id="pergunta3"></div>
+                <ul style="list-style-type: none;">
+                    <li class="alternativa3"></li>
+                    <li class="alternativa3"></li>
+                    <li class="alternativa3"></li>
+                </ul>
+                <div id="pergunta4"></div>
+                <ul style="list-style-type: none;">
+                    <li class="alternativa4"></li>
+                    <li class="alternativa4"></li>
+                    <li class="alternativa4"></li>
+                </ul>
+                <div id="pergunta5"></div>
+                <ul style="list-style-type: none;">
+                    <li class="alternativa5"></li>
+                    <li class="alternativa5"></li>
+                    <li class="alternativa5"></li>
+                </ul>
+
+                <div style="text-align: center;">
+                    <p> 
+                        <button id="btn" type="button" onclick="clicou()"> <strong> Clique aqui para ver as respostas</strong></button>
+                    </p>                    
+                </div>
+
+                <div id="res"></div>
+
+            </div>            
+        </form>
+    </main>
+
+    <aside>
+
+    </aside>
+
+    <footer>
+
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
