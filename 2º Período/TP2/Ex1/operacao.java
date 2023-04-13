@@ -7,7 +7,7 @@ public class operacao {
     public static void main(String [] args){
         int num1, num2, opc;
         Scanner teclado = new Scanner(System.in);
-        System.out.printf("Escolha: \n1 - soma \n2- subtracao \n3 - multiplicacao \n4 - divisao \n> ");
+        System.out.printf("Escolha: \n1 - Soma \n2 - Subtracao \n3 - Multiplicacao \n4 - Divisao \n> ");
         opc = teclado.nextInt();
 
         System.out.printf("Insira dois numeros: ");
