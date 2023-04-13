@@ -1,3 +1,4 @@
+//Altere o tipo das duas variáveis do exercício 1 para ponto flutuante
 package TP2.Ex2;
 import java.util.Scanner;
 
