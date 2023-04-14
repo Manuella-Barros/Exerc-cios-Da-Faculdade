@@ -23,7 +23,7 @@ public class ex1 {
             }
             if(conta.opc == 2){
                 System.out.printf("\nDigite a quantia a ser sacada: ");
-                //Esse do ta errado
+                //Falta verificar o saldo de retirada
                 //do {
                    conta.salRetirar = teclado.nextFloat();
                 //    if(conta.salRetirar > conta.salConta){
