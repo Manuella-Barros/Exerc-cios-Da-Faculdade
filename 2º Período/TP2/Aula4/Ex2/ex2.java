@@ -25,6 +25,20 @@ public class ex2 {
         data.ano = teclado.nextInt();
         System.out.println("Insira um separador:");
         data.separador = teclado.next().charAt(0);
-        data.imprime();
+        data.ehValida();
+
+        if(data.ehValida() == true){
+            data.imprime();
+
+            if (data.ehBissexto() == true){
+                System.out.println("É bissexto");
+            } else{
+                System.out.println("Não é bissexto");
+            }
+
+        }else {
+            System.out.println("Data Invalida");
+        }
+
     }
 }
