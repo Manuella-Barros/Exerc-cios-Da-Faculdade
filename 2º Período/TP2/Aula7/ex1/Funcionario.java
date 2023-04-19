@@ -1,5 +1,5 @@
 package TP2.Aula7.ex1;
-
+import java.util.Scanner;
 public class Funcionario {
     private String nome, sobrenome;
     private float salMen;
@@ -8,6 +8,17 @@ public class Funcionario {
         setNome(nome);
         setSobrenome(sobrenome);
         setSalMen(salMen);
+    }
+
+    public void dados(){
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("\nInsira os dados do funcionario");
+        System.out.println("Insira seu nome, sobrenome e salario: ");
+        this.setNome(teclado.next());
+        this.setSobrenome(teclado.next());
+        this.setSalMen(teclado.nextFloat());
+
+        imprime();
     }
 
     public void setNome(String nome){

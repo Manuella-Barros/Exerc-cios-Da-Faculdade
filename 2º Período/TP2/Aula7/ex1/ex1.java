@@ -18,18 +18,12 @@
 //disso, aplique um aumento de 20% em seus salários e
 //novamente faça a exibição no Console
 package TP2.Aula7.ex1;
-import java.util.Scanner;
 public class ex1 {
     public static void main(String [] args){
-        Scanner teclado = new Scanner(System.in);
         Funcionario func1 = new Funcionario(" ", " ", 0);
+        Funcionario func2 = new Funcionario(" ", " ", 0);
 
-        System.out.println("Insira os dados do funcionario 1");
-        System.out.println("Insira seu nome, sobrenome e salario: ");
-        func1.setNome(teclado.next());
-        func1.setSobrenome(teclado.next());
-        func1.setSalMen(teclado.nextFloat());
-
-        func1.imprime();
+        func1.dados();
+        func2.dados();
     }
 }
