@@ -42,13 +42,12 @@ public class ClimaTempo {
         return max;
     }
     public double CalcularPressaoMinima(double[] pressao) {
-        double min = 1000;
+        double min = 1000.0;
         for (int i = 0; i < 7; i++)
         {
             if(pressao[i] < min)
             {
                 min = pressao[i];
-                System.out.printf("min = %f\n", min);
             }
         }
         return min;

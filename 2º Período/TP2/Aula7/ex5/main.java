@@ -15,7 +15,7 @@ public class main {
         // deve resultar ~ 1.904
         System.out.printf("Média pluvial: %.3f\n", ct.CalcularMediaPluvial(chuva));
         // deve resultar 95.34
-        System.out.printf("Pressão mínima: %.2f\n" + ct.CalcularPressaoMinima(pressao));
+        System.out.printf("Pressão mínima: %.2f\n", ct.CalcularPressaoMinima(pressao));
     }
 
 }
