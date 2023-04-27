@@ -12,17 +12,39 @@
 //Getters e Setters. Para valores default, considere que
 //um número de identificação padrão é 1, a quantidade
 //é 0, o preço é 0 e o nome é um texto vazio.
+//
+//package TP2.Aula7.ex2;
+//import java.util.Scanner;
+////Esse código foi feito com Thaissa Lopes, Lucca Carvalho e Lohan Toniatti
+//
+//public class main {
+//    public static void main(String [] args){
+//        Scanner teclado = new Scanner(System.in);
+//        Produto prod = new Produto(1, 0, " ", 0);
+//    }
+//}
 
 package TP2.Aula7.ex2;
 import java.util.Scanner;
-//Esse código foi feito com Thaissa Lopes, Lucca Carvalho e Lohan Toniatti
 
 public class main {
-    public static void main(String [] args){
+
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         Produto prod = new Produto(1, 0, " ", 0);
 
-        prod.define();
+        System.out.println("Insira as informações do produto: ");
+        System.out.printf("\nId: ");
+        prod.setId(teclado.nextInt());
+        System.out.printf("\nQuantidade: ");
+        prod.setQntd(teclado.nextInt());
+        System.out.printf("\nNome: ");
+        prod.setNome(teclado.next());
+        System.out.printf("\nPreco: ");
+        prod.setPreco(teclado.nextFloat());
+
+        prod.imprime();
+        teclado.close();
+
     }
 }
-

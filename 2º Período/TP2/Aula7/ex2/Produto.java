@@ -1,11 +1,9 @@
 package TP2.Aula7.ex2;
-import java.util.Scanner;
 
 public class Produto {
     private int id, qntd;
     private String nome;
     private float preco;
-    Scanner teclado = new Scanner(System.in);
 
     public Produto(int id, int qntd, String nome, float preco){
         setId(id);
@@ -61,20 +59,6 @@ public class Produto {
     }
     public float getPreco(float preco){
         return preco;
-    }
-
-    public void define(){
-        System.out.println("Insira as informações do produto: ");
-        System.out.printf("\nId: ");
-        this.setId(teclado.nextInt());
-        System.out.printf("\nQuantidade: ");
-        this.setQntd(teclado.nextInt());
-        System.out.printf("\nNome: ");
-        this.setNome(teclado.next());
-        System.out.printf("\nPreco: ");
-        this.setPreco(teclado.nextFloat());
-
-        imprime();
     }
 
     public void imprime(){

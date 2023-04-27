@@ -4,9 +4,16 @@ public class FuncaoQuadratica {
     private double A, B, C;
 
     public FuncaoQuadratica(int A, int B, int C){
-        this.A = A; //set não será necessário pois os valores dos atributos são dados aqui
-        this.B = B;
+        setA(A);
+        this.B = B; //set não será necessário pois os valores dos atributos são dados aqui
         this.C = C;
+    }
+    public boolean setA(double A){
+        if(A != 0){
+            this.A = A;
+            return true;
+        }
+        return false;
     }
 
     public double Raiz1(){
