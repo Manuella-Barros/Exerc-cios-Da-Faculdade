@@ -43,4 +43,36 @@ public class Tweet {
 
         System.out.printf("Existem %d palavras\n", contador);
     }
+
+    public void contaFrases(String paragrafro){
+        int contador = 0;
+
+        for(int i = 0; i < paragrafro.length(); i++){
+            if(paragrafro.charAt(i) == '.'){ //
+                contador++;
+            }
+        }
+        if(paragrafro.charAt(paragrafro.length() - 1) != '.'){ // Se a frase ñ terminar com um espali
+            contador++; // add + 1 pra contar a ultima paravra
+        }
+
+        System.out.printf("Existem %d frases\n", contador);
+    }
+
+    public void contaRepeticoes(String paragrafro){
+
+    }
+
+    static public void randomParagrafo(){
+        String textos[] = {"Dona","Aranha", "subiu", "pela", "parede", "veio", "a", "chuva", "forte", "e", "a", "derrubou",
+                "já", "passou", "a", "chuva", "e", "o", "sol", "já", "vem", "surgindo", "e", "a", "dona", "aranha",
+                "continua", "a", "subir", "ela", "é", "teimosa", "desobediente", "sobe", "nunca", "está", "contente"};
+        String texto = " ";
+
+        for(int i = 0; i < 10; i++){
+            texto += textos[(int)Math.floor(Math.random()*37)]; // randomiza de 0 a 36 int
+            texto += " ";
+        }
+        System.out.printf("Texto gerado aleatoriamente:\n> %s\n",texto);
+    }
 }

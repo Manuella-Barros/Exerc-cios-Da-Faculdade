@@ -12,6 +12,8 @@ public class main {
         twt.setParagrafo(paragrafo);
         twt.contaCaracteres(paragrafo);
         twt.contaPalavras(paragrafo);
+        twt.contaFrases(paragrafo);
+        Tweet.randomParagrafo();
 
     }
 }
