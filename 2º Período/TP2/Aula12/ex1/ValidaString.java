@@ -7,8 +7,8 @@ public class ValidaString {
         this.t2 = t2.toLowerCase();
         qtdVogais(t1);
         retiraVogais(t1);
-        //naoRepete(t1);
-        //emComum(t1, t2);
+        naoRepete(t1);
+        emComum(t1, t2);
         addVogais(t1);
     }
 
@@ -39,24 +39,36 @@ public class ValidaString {
     }
 
     public void naoRepete(String t1){
-        String auxTexto = " ";
-        auxTexto += t1.charAt(0); //Adiciona a primeira letra
-
-
+        String auxTexto = " "; // F
         for(int i = 0; i < t1.length(); i++){// F
-            //System.out.println(t1.indexOf(t1.charAt(i)));
-            // charAt() = mostra o a letra do index; indexOf() = mostra o a index da letra;
-            if(t1.indexOf(t1.charAt(i)) < i){
-                break;
-            } else{
-                auxTexto += t1.charAt(t1.indexOf(t1.charAt(i)));
+            // o indexOf so pega a primeira posição da letra da string
+            if(t1.indexOf(t1.charAt(i)) == i){ // se o indexOf da letra for igual a posição dela, add na string
+                auxTexto += t1.charAt(i);
             }
-
         }
         System.out.printf("String sem repetições %s\n", auxTexto);
     }
 
-    public void emComum(String t1, String t2){
+    public boolean emComum(String t1, String t2){
+        String textoComun = " ";
+        int contador = 0;
+        for(int i = 0; i < t1.length(); i++){ // percorre a primeira string
+            for (int j = 0; j < t2.length(); j++){ // percorre a segunda string
+                if(t1.charAt(i) == t2.charAt(j)){ // compara as duas
+                    textoComun += t1.charAt(i);
+                    contador++;
+                }
+            }
+        }
+
+        if(contador == 0){
+            System.out.println("Não há texto em comum");
+            return false;
+        } else {
+            System.out.printf("Texto em comum: %s\n", textoComun);
+            return true;
+
+        }
 
     }
 
@@ -65,12 +77,14 @@ public class ValidaString {
         for(int i = 0; i < t1.length(); i++){
             switch (t1.charAt(i)){ //Se o char na posição i for igual a 'a', 'e', 'i', 'o', 'u', conta a vogal
                 case 'a', 'e', 'i', 'o', 'u' :
-                    textoNovo += t1.charAt(i);
+                    if(t1.indexOf(t1.charAt(i)) == i){ // se o indexOf da letra for igual a posição dela, add na string
+                        textoNovo += t1.charAt(i);
+                    }
                     break;
                 default:
                     break;
             }
         }
-        System.out.printf("Tem %s vogais\n", textoNovo);
+        System.out.printf("Texto só com as vogais (sem repetições): %s\n", textoNovo);
     }
 }
