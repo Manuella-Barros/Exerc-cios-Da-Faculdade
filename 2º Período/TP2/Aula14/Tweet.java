@@ -1,10 +1,11 @@
 package TP2.Aula14;
 
 public class Tweet {
-    private String paragrafro;
+    private String paragrafro, palavra;
 
-    public Tweet(String paragrafro){
+    public Tweet(String paragrafro, String palavra){
         setParagrafo(paragrafro);
+        this.palavra = palavra;
     }
 
     public boolean setParagrafo(String paragrafro){
@@ -59,7 +60,17 @@ public class Tweet {
         System.out.printf("Existem %d frases\n", contador);
     }
 
-    public void contaRepeticoes(String paragrafro){
+    public void contaRepeticoes(String paragrafro, String palavra){
+        String texto[] = paragrafro.split(" ");
+        for(int i = 0; i < texto.length; i++){ // vai comparar as tres palavras
+            for(int j = 0; j < texto[j].length(); i++){ // le cada letra da palavra i
+                if(texto[j] == palavra){
+                    System.out.println(texto[j]);
+                } else {
+                    System.out.println("NAo");
+                }
+            }
+        }
 
     }
 
