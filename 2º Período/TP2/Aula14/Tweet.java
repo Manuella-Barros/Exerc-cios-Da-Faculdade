@@ -10,7 +10,6 @@ public class Tweet {
 
     public boolean setParagrafo(String paragrafro){
         if(paragrafro.length() > 0 && paragrafro.length() <= 144){
-            System.out.println(paragrafro);
             return true;
         } else{
             System.out.println("Texto grande demais");
@@ -27,7 +26,7 @@ public class Tweet {
             }
         }
 
-        System.out.printf("Existem %d caracteres\n", contador);
+        System.out.printf("> Existem %d caracteres\n", contador);
     }
 
     public void contaPalavras(String paragrafro){
@@ -42,7 +41,7 @@ public class Tweet {
             contador++; // add + 1 pra contar a ultima paravra
         }
 
-        System.out.printf("Existem %d palavras\n", contador);
+        System.out.printf("> Existem %d palavras\n", contador);
     }
 
     public void contaFrases(String paragrafro){
@@ -57,21 +56,18 @@ public class Tweet {
             contador++; // add + 1 pra contar a ultima paravra
         }
 
-        System.out.printf("Existem %d frases\n", contador);
+        System.out.printf("> Existem %d frases\n", contador);
     }
 
     public void contaRepeticoes(String paragrafro, String palavra){
         String texto[] = paragrafro.split(" ");
+        int contador = 0;
         for(int i = 0; i < texto.length; i++){ // vai comparar as tres palavras
-            for(int j = 0; j < texto[j].length(); i++){ // le cada letra da palavra i
-                if(texto[j] == palavra){
-                    System.out.println(texto[j]);
-                } else {
-                    System.out.println("NAo");
+                if(texto[i].equals(palavra)){
+                    contador++;
                 }
-            }
         }
-
+        System.out.printf("> A palavra %s se encontra %d vezes no paragrafo\n", palavra, contador);
     }
 
     static public void randomParagrafo(){
@@ -84,6 +80,6 @@ public class Tweet {
             texto += textos[(int)Math.floor(Math.random()*37)]; // randomiza de 0 a 36 int
             texto += " ";
         }
-        System.out.printf("Texto gerado aleatoriamente:\n> %s\n",texto);
+        System.out.printf(" Texto gerado aleatoriamente:\n> %s\n",texto);
     }
 }
