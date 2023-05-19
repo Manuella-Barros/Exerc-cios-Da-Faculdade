@@ -6,6 +6,7 @@ public class main {
     public static void main(String[] args){
         Scanner teclado = new Scanner(System.in);
         String texto1, texto2;
+        ValidaString t1;
 
         System.out.println("Insira o texto 1: ");
         texto1 = teclado.next();
@@ -13,7 +14,7 @@ public class main {
         texto2 = teclado.next();
 
 
-        ValidaString t1 = new ValidaString(texto1, texto2);
+         t1 = new ValidaString(texto1, texto2);
     }
 
 }
