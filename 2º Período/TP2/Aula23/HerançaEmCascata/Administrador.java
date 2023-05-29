@@ -9,6 +9,6 @@ public class Administrador extends CorpoDocente{
     }
 
     public void exibir_detalhes(){
-        System.out.printf("\nNome: %s \nFruta favorita: %s \nIdade: %d \nSalario: %.2f \nArea de especialização: %s \nAnos de experciencia: %d\n", nome, fruta_fav, idade, salario, area_especializacao, anos_experiencia);
+        System.out.printf("\n\nInformações do Administrador \n\nNome: %s \nFruta favorita: %s \nIdade: %d \nSalario: %.2f \nArea de especialização: %s \nAnos de experciencia: %d\n", nome, fruta_fav, idade, salario, area_especializacao, anos_experiencia);
     }
 }

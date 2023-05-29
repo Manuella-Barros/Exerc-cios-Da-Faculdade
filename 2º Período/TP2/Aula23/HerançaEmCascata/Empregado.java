@@ -7,4 +7,8 @@ public class Empregado extends MembroDaComunidade{
         super(nome, fruta_fav, idade);
         this.salario = salario;
     }
+
+    public void exibir_detalhes(){
+        System.out.printf("\n\nInformações do Empregado \n\nNome: %s \nFruta favorita: %s \nIdade: %d \nSalario: %.2f\n", nome, fruta_fav, idade, salario);
+    }
 }

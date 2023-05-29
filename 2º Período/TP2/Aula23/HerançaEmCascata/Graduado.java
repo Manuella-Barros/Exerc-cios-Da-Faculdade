@@ -7,4 +7,8 @@ public class Graduado  extends MembroDaComunidade{
         super(nome, fruta_fav, idade);
         this.ano_formacao = ano_formacao;
     }
+
+    public void exibir_detalhes(){
+        System.out.printf("\n\nInformações do Graduado \n\nNome: %s \nFruta favorita: %s \nIdade: %d \nAno de formação: %d\n", nome, fruta_fav, idade, ano_formacao);
+    }
 }

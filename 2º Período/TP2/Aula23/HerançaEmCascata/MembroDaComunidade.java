@@ -8,4 +8,8 @@ public class MembroDaComunidade {
         this.fruta_fav = fruta_fav;
         this.idade = idade;
     }
+
+    public void exibir_detalhes(){
+        System.out.printf("\nNome: %s \nFruta favorita: %s \nIdade: %d\n", nome, fruta_fav, idade);
+    }
 }

@@ -7,4 +7,8 @@ public class Funcionarios extends Empregado{
         super(nome, fruta_fav, idade, salario);
         this.carga_horaria = carga_horaria;
     }
+
+    public void exibir_detalhes(){
+        System.out.printf("\n\nInformações do Funcionario \n\nNome: %s \nFruta favorita: %s \nIdade: %d \nSalario: %.2f \nCarga horária: %d\n", nome, fruta_fav, idade, salario, carga_horaria);
+    }
 }
