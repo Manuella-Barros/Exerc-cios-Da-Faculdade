@@ -10,6 +10,6 @@ public class main {
         String texto = "eai como voce ta eai";
         StringTokenizer st = new StringTokenizer(texto, " ");
 
-        st.forEach(System.out::println);
+        /*st.forEach(System.out::println);*/
     }
 }

@@ -13,5 +13,5 @@ abstract public class Pagamento {
         System.out.printf("\nInformações do pagamento \nValor: %.2f \nData: %i \n", valor, data);
     }
 
-    abstract public void processarPagamento();
+    abstract public boolean processarPagamento(Contas contas);
 }

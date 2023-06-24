@@ -15,7 +15,12 @@ public class PagamentoOnline extends Pagamento{
         System.out.printf("\nInformações do pagamento online \nNumero do cartao: %i \nParcelas: %i \nBandeira: %s \n", numCartao, qntParcelas, bandeira);
     }
 
-    public void processarPagamento(){
-
+    public boolean processarPagamento(Contas contas) {
+        System.out.println(valor);
+        return true;
+    }
+    public boolean processarPagamento(Contas contas, int parcelas, double juros){
+        System.out.println(valor+juros);
+        return true;
     }
 }
