@@ -7,9 +7,11 @@ package TP2.Aula15.ex47;
 import java.util.*;
 public class main {
     public static void main(String[]args){
-        String texto = "eai como voce ta eai";
-        StringTokenizer st = new StringTokenizer(texto, " ");
+        String texto = "eai como voce ta?";
+        StringTokenizer textoDividido = new StringTokenizer(texto, " ");
 
-        /*st.forEach(System.out::println);*/
+        while (textoDividido.hasMoreTokens()) {
+            System.out.println(textoDividido.nextToken());
+        }
     }
 }
