@@ -8,6 +8,19 @@ package TP2.Aula26.exExtra.ex2;
 //retorna qual dos produtos tem o preço maior.
 public class main {
     public static void main(String[]args){
+        Produto p1 = new Produto("Bonequinha Ladybug", 2, 50);
+        Produto p2 = new Produto("Boneco Cat Noir", 5, 20);
+
+        switch (p1.compareTo(p2)){
+            case -1:
+                System.out.printf("%s é mais caro do que %s \n", p2.nome, p1.nome);
+                break;
+            case 1:
+                System.out.printf("%s é mais caro do que %s \n", p1.nome, p2.nome);
+            case 0:
+                System.out.printf("Os dois custam a mesma coisa");
+                break;
+        }
 
     }
 }

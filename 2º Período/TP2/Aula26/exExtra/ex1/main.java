@@ -10,21 +10,27 @@ package TP2.Aula26.exExtra.ex1;
 import java.util.*;
 public class main {
     public static void main(String[]args){
-        Livraria livrariaObj = new Livraria();
+        Livraria livrariaObj = new Livraria("Collen Hover", "Verity", 200, 20, 10);
         Scanner teclado = new Scanner(System.in);
-        int opc;
+        int opc = 0, valor = 0;
 
-        if(livrariaObj.verificaLivroDisponivel()){
-            System.out.printf("Deseja comprar? \nDigite 0 para sim \nDifite 1 para não \n> ");
-            opc = teclado.nextInt();
+        do{
+            if(livrariaObj.verificaLivroDisponivel()){
+                System.out.printf("Quantos livros deseja comprar? \n(digite 0 se não deseja comprar) \n> ");
+                opc = teclado.nextInt();
 
-            switch (opc){
-                case 0:
-                    livrariaObj.realizaCompra();
-                    break;
-                case 1:
-                    break;
+                if(opc!=0){
+                    livrariaObj.quantidade -= opc;
+                    valor = opc* livrariaObj.preco;
+                }
             }
+        }while (opc!=0);
+
+        if (valor != 0){
+            System.out.printf("Nota da compra \nTitulo: %s \nAutor: %s \nQuantidade restante: %d \nValor total: %d \n\n Volte sempre :)", livrariaObj.titulo, livrariaObj.autor,  livrariaObj.quantidade, valor);
+        } else{
+            System.out.println("Volte sempre :)");
         }
+
     }
 }
