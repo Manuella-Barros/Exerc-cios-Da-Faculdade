@@ -79,7 +79,7 @@ public class ArvBinBusca<T extends Comparable<T>> extends Raiz<T> {
             }
 
             raiz.elem = raizSubstituta.elem; // apaga o elemento pelo emento novo
-            removeRecursiva(raiz.esq, (T)raiz.elem);
+            raiz.esq = removeRecursiva(raiz.esq, (T)raiz.elem);
 
             return raiz;
 
@@ -176,8 +176,6 @@ public class ArvBinBusca<T extends Comparable<T>> extends Raiz<T> {
 
         if(raiz.elem.compareTo(elemMin) > 0 && raiz.elem.compareTo(elemMax) < 0) { // elemMin < elem < elemMax
             System.out.println("\nentrou aqui -> " + (T) raiz.elem);
-            raiz.esq = removeForaIntervaloRecurssiva(elemMin, elemMax, raiz.esq);
-            raiz.dir = removeForaIntervaloRecurssiva(elemMin, elemMax, raiz.dir);
             this.raiz = removeRecursiva(this.raiz, (T) raiz.elem);
             return null;
         }
