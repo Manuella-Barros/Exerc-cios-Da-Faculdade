@@ -1,4 +1,14 @@
 import java.util.Scanner;
+// Complexidade O(h)
+//
+// O método constroiArvore chama o método constroiArvoreRecursivamente que gasta O(n) pra construir a arvore pois precisa
+// percorrer todos os valores de um vetor de tamanho n para faze-la
+//
+// O método imprimePreOrdem chama o método imprimePreOrdemRecursiva gasta O(h) pra imprimir a arvore pois precisa percorrer
+// todos os elementos da arvore que tem altura h
+//
+// O método obtemAncestralComum chama o método obtemAncestralComumRecursiva que gasta O(h) pra achar o menor ancestral comum
+// pois precisa percorrer todos os elementos da arvore para achar os nós inseridos e ai sim dizer o acentral
 
 public class Ex5 {
     public static void main(String[] args) {
@@ -9,9 +19,9 @@ public class Ex5 {
         //int vetor[] = { 10, 9, 8, 7, 6, 5 };    // <10<9<8<7<6<5<><>><>><>><>><>><>>
 
         // constroi e mostra arvore
-        arvBinBusca.constroiArvore(vetor);
+        arvBinBusca.constroiArvore(vetor); // O(n)
         System.out.println("\nArvore");
-        arvBinBusca.imprimePreOrdem();
+        arvBinBusca.imprimePreOrdem(); // O(h)
 
         // pega input das raizes do usuario
         System.out.println("\n\nInsira 2 valores da arvore para encontrar seu menor ancestral comum");
@@ -25,7 +35,7 @@ public class Ex5 {
             Raiz raiz2 = new Raiz(raiz2Input);
 
             // pegando o menor ancestral das raizes inseridas pelo usuario
-            Raiz menor_ancestral_comum = arvBinBusca.obtemAncestralComum(raiz1, raiz2);
+            Raiz menor_ancestral_comum = arvBinBusca.obtemAncestralComum(raiz1, raiz2);  // O(h)
 
             if(menor_ancestral_comum == null){ // se as raizes inseridas não estiverem na arvore
                 System.out.println("\n\nPorfavor insira elementos presentes na arvore");
