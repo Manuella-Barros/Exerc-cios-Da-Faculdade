@@ -1,3 +1,5 @@
+// COMPLEXIDADE O(log n) para refazer a heap
+
 public class Ex2 {
     public static void main(String[] args) {
         int vetor[] = { 2, 8, 5, 3, 9, 1 };

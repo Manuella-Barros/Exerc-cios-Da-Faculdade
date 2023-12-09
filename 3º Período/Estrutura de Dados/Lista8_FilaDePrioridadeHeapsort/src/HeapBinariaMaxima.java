@@ -51,12 +51,12 @@ public class HeapBinariaMaxima {
     /**************** EXERCICIO 5 ****************/
     // troco o item a ser removido pelo ultimo, diminuo o tamanho e chamo o refaz. Parecido com o heapsort
     public boolean remove(int i){
-        int ultItem = vetor[n];
-        vetor[n] = vetor[i];
-        vetor[i] = ultItem;
+        int ultItem = vetor[n]; // O(1)
+        vetor[n] = vetor[i]; // O(1)
+        vetor[i] = ultItem; // O(1)
 
-        this.n--;
-        refaz(i);
+        this.n--; // O(1)
+        refaz(i); // O(log n)
         return true;
     }
 
@@ -69,6 +69,8 @@ public class HeapBinariaMaxima {
     }
 
     public void imprime() {
+        System.out.print("Conteúdo da heap: ");
+
         for(int i = 1; i <= this.n; ++i) {
             System.out.print(this.vetor[i] + " ");
         }
